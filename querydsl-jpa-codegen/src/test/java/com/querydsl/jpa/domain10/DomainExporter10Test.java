@@ -16,7 +16,7 @@ import com.querydsl.jpa.codegen.HibernateDomainExporter;
 public class DomainExporter10Test {
 
     @Test
-    public void Execute() throws IOException {
+    public void execute() throws IOException {
         File gen = new File("target/" + getClass().getSimpleName());
         FileUtils.delete(gen);
         Configuration config = new Configuration();

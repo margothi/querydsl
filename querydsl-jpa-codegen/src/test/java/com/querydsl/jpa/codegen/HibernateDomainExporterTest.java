@@ -39,7 +39,7 @@ public class HibernateDomainExporterTest {
             .getPackage().getAnnotation(Config.class));
 
     @Test
-    public void Execute_MyEntity() throws IOException {
+    public void execute_myEntity() throws IOException {
         FileUtils.delete(new File("target/gen6"));
         File myEntity = new File("src/test/resources/entity.hbm.xml");
         Configuration config = new Configuration();
@@ -55,7 +55,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_Contact() throws IOException {
+    public void execute_contact() throws IOException {
         FileUtils.delete(new File("target/gen1"));
         File contact = new File("src/test/resources/contact.hbm.xml");
         Configuration config = new Configuration();
@@ -72,7 +72,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_Contact_with_Suffix() throws IOException {
+    public void execute_contact_with_suffix() throws IOException {
         FileUtils.delete(new File("target/gen1"));
         File contact = new File("src/test/resources/contact.hbm.xml");
         Configuration config = new Configuration();
@@ -89,7 +89,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_Contact2() throws IOException {
+    public void execute_contact2() throws IOException {
         FileUtils.delete(new File("target/gen2"));
         File contact = new File("src/test/resources/contact2.hbm.xml");
         Configuration config = new Configuration();
@@ -106,7 +106,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_Multiple() throws IOException {
+    public void execute_multiple() throws IOException {
         FileUtils.delete(new File("target/gen3"));
         Configuration config = new Configuration();
         for (Class<?> cl : Domain.classes) {
@@ -138,7 +138,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_Multiple2() throws IOException {
+    public void execute_multiple2() throws IOException {
         FileUtils.delete(new File("target/gen4"));
         Configuration config = new Configuration();
         for (Class<?> cl : Domain2.classes) {
@@ -171,7 +171,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_Store() throws IOException {
+    public void execute_store() throws IOException {
         FileUtils.delete(new File("target/gen5"));
         File contact = new File("src/test/resources/store.hbm.xml");
         Configuration config = new Configuration();
@@ -190,7 +190,7 @@ public class HibernateDomainExporterTest {
     }
 
     @Test
-    public void Execute_CompositeKey() throws IOException {
+    public void execute_compositeKey() throws IOException {
        // See https://github.com/querydsl/querydsl/issues/1459
 
         FileUtils.delete(new File("target/gen18"));

@@ -68,25 +68,25 @@ public class IntegrationBase extends ParsingTest implements HibernateTest {
 
     @Override
     @Test
-    public void GroupBy() throws Exception {
+    public void groupBy() throws Exception {
         // NOTE : commented out, because HQLSDB doesn't support these queries
     }
 
     @Override
     @Test
-    public void GroupBy_2() throws Exception {
+    public void groupBy_2() throws Exception {
         // NOTE : commented out, because HQLSDB doesn't support these queries
     }
 
     @Override
     @Test
-    public void OrderBy() throws Exception {
+    public void orderBy() throws Exception {
         // NOTE : commented out, because HQLSDB doesn't support these queries
     }
 
     @Override
     @Test
-    public void DocoExamples910() throws Exception {
+    public void docoExamples910() throws Exception {
         // NOTE : commented out, because HQLSDB doesn't support these queries
     }
 

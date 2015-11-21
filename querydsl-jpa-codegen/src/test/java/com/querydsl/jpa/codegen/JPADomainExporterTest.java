@@ -74,7 +74,7 @@ public class JPADomainExporterTest {
 
     @Test
     @Ignore // FIXME
-    public void Execute_MyEntity() throws IOException {
+    public void execute_myEntity() throws IOException {
         FileUtils.delete(new File("target/jpagen6"));
         File myEntity = new File("src/test/resources/entity.hbm.xml");
         Configuration config = new Configuration();
@@ -88,7 +88,7 @@ public class JPADomainExporterTest {
     }
 
     @Test
-    public void Execute_Contact() throws IOException {
+    public void execute_contact() throws IOException {
         FileUtils.delete(new File("target/jpagen1"));
         File contact = new File("src/test/resources/contact.hbm.xml");
         Configuration config = new Configuration();
@@ -103,7 +103,7 @@ public class JPADomainExporterTest {
     }
 
     @Test
-    public void Execute_Contact_with_Suffix() throws IOException {
+    public void execute_contact_with_suffix() throws IOException {
         FileUtils.delete(new File("target/jpagen1"));
         File contact = new File("src/test/resources/contact.hbm.xml");
         Configuration config = new Configuration();
@@ -118,7 +118,7 @@ public class JPADomainExporterTest {
     }
 
     @Test
-    public void Execute_Contact2() throws IOException {
+    public void execute_contact2() throws IOException {
         FileUtils.delete(new File("target/jpagen2"));
         File contact = new File("src/test/resources/contact2.hbm.xml");
         Configuration config = new Configuration();
@@ -133,7 +133,7 @@ public class JPADomainExporterTest {
     }
 
     @Test
-    public void Execute_Multiple() throws IOException {
+    public void execute_multiple() throws IOException {
         FileUtils.delete(new File("target/jpagen3"));
         Configuration config = new Configuration();
         for (Class<?> cl : Domain.classes) {
@@ -166,7 +166,7 @@ public class JPADomainExporterTest {
     }
 
     @Test
-    public void Execute_Multiple2() throws IOException {
+    public void execute_multiple2() throws IOException {
         FileUtils.delete(new File("target/jpagen4"));
         Configuration config = new Configuration();
         for (Class<?> cl : Domain2.classes) {
@@ -198,7 +198,7 @@ public class JPADomainExporterTest {
 
     @Test
     @Ignore // FIXME
-    public void Execute_Store() throws IOException {
+    public void execute_store() throws IOException {
         FileUtils.delete(new File("target/jpagen5"));
         File contact = new File("src/test/resources/store.hbm.xml");
         Configuration config = new Configuration();
